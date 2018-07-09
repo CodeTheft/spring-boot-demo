@@ -110,7 +110,7 @@ public class Response<T> {
 	 * 判断response返回是否正常
 	 * @return true返回正常, false返回报错
 	 */
-	public boolean isSuccess() {
+	public boolean success() {
 		return CodeConstant.SUCCESS.equals(code);
 	}
 	

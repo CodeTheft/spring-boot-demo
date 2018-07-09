@@ -50,7 +50,7 @@ public class LoginLogAspect {
 			
 			@SuppressWarnings("unchecked")
 			Response<User> response = (Response<User>) joinPoint.proceed();
-			if (response != null && response.isSuccess()) {
+			if (response != null && response.success()) {
 				User user = response.getData();
 				long userId = user.getUserId();
 				
